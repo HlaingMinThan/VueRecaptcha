@@ -64,15 +64,3 @@ export default {
 };
 </script>
 ```
-## Documentation
-
-[Laracasts/cypress](https://github.com/laracasts/cypress)
-
-
-## Demo
-
-Insert gif or link to demo
-
-
-![docs](https://i.ibb.co/tPh59dq/Screen-Shot-2022-05-11-at-10-23-42-AM.png)
-
