@@ -4,10 +4,11 @@
 
 <script>
 export default {
-  data() {
-    return {
-      sitekey: "6LfY2-YfAAAAAMohJHhdVnaE02hV0GnOd-QHGNVg",
-    };
+  props: {
+    sitekey: {
+      type: String,
+      required: true,
+    },
   },
   methods: {
     getToken(token) {
