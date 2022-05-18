@@ -29,7 +29,7 @@ Example.vue
     <form action="" @submit.prevent="sibmit">
       <input type="text" />
       <VueSimpleRecaptcha
-        sitekey="6LfY2-YfAAAAAMohJHhdVnaE02hV0GnOd-QHGNVg"
+        :sitekey="sitekey"
         ref="recaptcha"
         @callback="callback"
       />
@@ -45,6 +45,11 @@ export default {
   name: "App",
   components: {
     VueSimpleRecaptcha,
+  },
+  data(){
+    return{
+      sitekey:"..."
+    }
   },
   methods: {
     callback(token){
