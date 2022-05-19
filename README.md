@@ -26,7 +26,7 @@ Example.vue
 
 <template>
   <div id="app">
-    <form action="" @submit.prevent="sibmit">
+    <form action="" @submit.prevent="submit">
       <input type="text" />
       <VueSimpleRecaptcha
         :sitekey="sitekey"
@@ -57,7 +57,7 @@ export default {
       //make ajax request
       console.log('handling ajax request here')
     },
-    sibmit() {
+    submit() {
       this.$refs.recaptcha.execute()
     },
   },
