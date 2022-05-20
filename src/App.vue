@@ -1,9 +1,17 @@
 <template>
   <div id="app">
-    <form action="" @submit.prevent="submit">
+    <form
+      action=""
+      @submit.prevent="submit"
+      style="max-width: 600px; margin: auto"
+    >
       <input type="text" placeholder="email" v-model="email" />
       <input type="text" placeholder="password" v-model="password" />
-      <VueRecaptcha @callback="callback" ref="recaptcha" sitekey="6LfY2-YfAAAAAMohJHhdVnaE02hV0GnOd-QHGNVg"/>
+      <VueRecaptcha
+        @callback="callback"
+        ref="recaptcha"
+        sitekey="6LfY2-YfAAAAAMohJHhdVnaE02hV0GnOd-QHGNVg"
+      />
       <button type="submit">submit</button>
     </form>
   </div>
