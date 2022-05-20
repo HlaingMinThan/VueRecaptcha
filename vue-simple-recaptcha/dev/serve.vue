@@ -12,7 +12,7 @@ export default Vue.extend({
 
 <template>
   <div id="app">
-    <vue-simple-recaptcha :sitekey="sitekey"/>
+    <vue-simple-recaptcha :sitekey="sitekey" :invisible="invisible"/>
   </div>
 </template>
 <script>
@@ -21,6 +21,10 @@ export default {
     sitekey: {
       type: String,
       required: true,
+    },
+    invisible: {
+      type: Boolean,
+      default:false
     },
   },
 }
