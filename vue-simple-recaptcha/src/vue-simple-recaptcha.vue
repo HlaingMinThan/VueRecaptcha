@@ -1,5 +1,5 @@
 <template>
-  <div id="g-recaptcha" data-size="invisible" :data-sitekey="sitekey"></div>
+  <div id="g-recaptcha" :data-size="invisible ? 'invisible': false" :data-sitekey="sitekey" style="display:flex;justify-content: center;margin: 20px 0;"/>
 </template>
 
 <script>
@@ -8,6 +8,10 @@ export default {
     sitekey: {
       type: String,
       required: true,
+    },
+    invisible: {
+      type: Boolean,
+      default:false
     },
   },
   methods: {
