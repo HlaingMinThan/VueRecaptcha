@@ -1,5 +1,5 @@
 <template>
-  <div id="g-recaptcha" :data-size="invisible ? 'invisible': false" :data-sitekey="sitekey" style="display:flex;justify-content: center;margin: 20px 0;"/>
+  <div id="g-recaptcha" :data-size="invisible ? 'invisible': false" :data-sitekey="sitekey" :style="addMarginForRecaptcha2"/>
 </template>
 
 <script>
@@ -13,6 +13,14 @@ export default {
       type: Boolean,
       default:false
     },
+  },
+  computed:{
+    addMarginForRecaptcha2(){
+      if(!this.invisible){
+        return "display:flex;justify-content: center;margin: 20px 0;"  
+      }
+      return "";
+    }
   },
   methods: {
     getToken(token) {
