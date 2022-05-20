@@ -1,7 +1,8 @@
-;
+
 # Vue Simple Recaptcha
 
-a simple way to integrate google Recaptcha v2 (invisible,tick box) in your vue2 project.
+a simple way to integrate google Recaptcha v2 in your vue2 project. 
+Support for both of the invisible and box tick.
 
 
 
@@ -20,16 +21,14 @@ Install vue-simple-recaptcha with npm
 ```bash
 npm i vue-simple-recaptcha
 ```
-
+App.vue
 ```bash
-Example.vue
-
 <template>
   <div id="app">
     <form action="" @submit.prevent="submit">
       <input type="text" />
       <VueSimpleRecaptcha
-        :sitekey="sitekey"
+        sitekey="..."
         ref="recaptcha"
         @callback="callback"
       />
@@ -46,11 +45,6 @@ export default {
   components: {
     VueSimpleRecaptcha,
   },
-  data(){
-    return{
-      sitekey:"..."
-    }
-  },
   methods: {
     callback(token){
       console.log(token)
@@ -64,3 +58,6 @@ export default {
 };
 </script>
 ```
+## Props
+
+invisible - Boolean (default - false)
