@@ -17,7 +17,7 @@ export default {
   computed:{
     addMarginForRecaptcha2(){
       if(!this.invisible){
-        return "display:flex;justify-content: center;margin: 20px 0;"  
+        return "margin: 20px 0;"  
       }
       return "";
     }
