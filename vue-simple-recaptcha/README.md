@@ -1,7 +1,7 @@
 ;
 # Vue Simple Recaptcha
 
-a simple way to integrate google Recaptcha v2 (invisible) in your vue2 project.
+a simple way to integrate google Recaptcha v2 (invisible,tick box) in your vue2 project.
 
 
 
