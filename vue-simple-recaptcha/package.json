@@ -1,6 +1,6 @@
 {
   "name": "vue-simple-recaptcha",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "main": "dist/vue-simple-recaptcha.ssr.js",
   "browser": "dist/vue-simple-recaptcha.esm.js",
